@@ -43,6 +43,10 @@ body {
   width: 1200px;
   margin: 0 auto;
 }
+/* section 레이아웃 공동 패턴 */
+.wrap > section {
+  padding: 80px 0;
+}
 /* 전체레이아웃 */
 .wrap {
   position: relative;
@@ -157,7 +161,7 @@ body {
   background: url("../images/icoMyMenu.png") no-repeat;
   background-position: 0px 0px;
 }
-.center-more:hover::after {
+.center-more.active::after {
   background-position: 0px -6px;
 }
 .center-list {
@@ -277,7 +281,7 @@ body {
   height: calc(100vh - 105px - 128px);
   visibility: visible;
 }
-.all-menu:hover {
+.all-menu.active {
   width: 420px;
 }
 .all-menu-cate {
@@ -287,7 +291,7 @@ body {
   height: calc(100vh - 105px - 128px);
   background-color: #fff;
   overflow: auto;
-  /* 여기에다사 스크롤을 걸어줌 */
+  /* 여기에다가 스크롤을 걸어줌 */
 }
 .cate-list {
   position: relative;
@@ -591,8 +595,24 @@ body {
   text-align: center;
   color: #fff;
   background-color: #76bd42;
-
   line-height: 18px;
   font-size: 11px;
   font-weight: 700;
 }
+
+/* visual */
+.visual {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 410px;
+  padding: 0;
+  overflow: hidden;
+}
+.visual-slide{
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+/* 슬라이드 이전 다음 버튼 */
