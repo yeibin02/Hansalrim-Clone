@@ -89,12 +89,14 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <!-- swiper -->
+    <!-- link Swiper's css -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
     />
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
+
+    <!-- swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <!--  -->
     <link rel="stylesheet" href="css/index.css" />
     <script src="js/index.js"></script>
@@ -550,15 +552,28 @@
         <!-- 좌우 슬라이드 이동 버튼 -->
         <button class="visual-prev">이전</button>
         <button class="visual-next">다음</button>
-        <!-- 슬라이드 컨트롤러 -->
+        <!-- 슬라이드 콘트롤러 -->
         <div class="visual-control clearfix">
           <button class="visual-play"></button>
           <div class="visual-pg">1/17</div>
           <button class="visual-more"></button>
         </div>
       </section>
-      
       <!-- 오늘의 상품 -->
+      <section class="today">
+        <div class="container">
+          <h2 class="section-title">
+            <b>이 물품은 어떠세요?</b>
+          </h2>
+          <div class="good-wrap" id="data-today">
+            <!-- 외부 오늘 상품 데이터 연동 js -->
+            
+          </div>
+          <div class="good-wrap no-mb" id="data-today2">
+            <!-- 외부 오늘 상품 데이터 연동 js -->
+          </div>
+        </div>
+      </section>
       <!-- 알뜰 상품 -->
       <!-- 신상품 -->
       <!-- 추천물품 -->
