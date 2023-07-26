@@ -62,9 +62,78 @@ body {
   font-weight: 400;
   margin-bottom: 20px;
 }
-.section-title b{
+.section-title b {
   font-weight: 700;
-
+}
+.section-bar {
+  padding-bottom: 15px;
+}
+.section-bar::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 2px;
+  width: 20px;
+  height: 2px;
+  background-color: #707070;
+}
+.section-title-txt {
+  position: relative;
+  display: block;
+  margin-bottom: 20px;
+}
+.section-bt {
+  position: relative;
+  display: block;
+  width: 114px;
+  height: 34px;
+  text-align: center;
+  line-height: 32px;
+  border: 1px solid #bbb;
+  border-radius: 2px;
+  background-color: #fff;
+  color: #666;
+  font-size: 13px;
+  transition: background 0.2s;
+}
+.section-bt:hover {
+  background: #f9f9f9;
+}
+.slide-control {
+  position: relative;
+  display: block;
+  width: 140px;
+}
+.slide-prev,
+.slide-next {
+  position: absolute;
+  top: 0;
+  width: 26px;
+  height: 20px;
+  border: 0;
+  cursor: pointer;
+  font-size: 0;
+  background: transparent;
+}
+.slide-prev {
+  background: url("../images/swiperArrP.png") no-repeat;
+  left: 0;
+}
+.slide-prev:hover {
+  background-position: 0 -20px;
+}
+.slide-next {
+  background: url("../images/swiperArrN.png") no-repeat;
+  right: 0;
+}
+.slide-next:hover {
+  background-position: 0 -20px;
+}
+.slide-pg {
+  position: relative;
+  display: block;
+  text-align: center;
+  bottom: 0;
 }
 /* 전체레이아웃 */
 .wrap {
@@ -209,7 +278,6 @@ body {
   display: block;
   position: relative;
   padding: 13px 0;
-  background-color: aquamarine;
 }
 .header-main-left {
   position: relative;
@@ -221,7 +289,6 @@ body {
   display: inline-block;
   padding-top: 12px;
   margin-right: 45px;
-  background-color: bisque;
 }
 .gnb {
   position: relative;
@@ -742,21 +809,115 @@ body {
   border: 0;
 }
 /* 오늘의 상품 */
-.today{
+.today {
   position: relative;
   display: block;
-  background-color: #ff9933;
 }
-.good-wrap{
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 30px;
-}
-.good-box{
+.good-box {
   position: relative;
   display: block;
   width: 290px;
   height: 410px;
   background-color: #fff;
+}
+.good-img {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 290px;
+  overflow: hidden;
+}
+.good-img > img {
+  transition: transform 0.5s;
+}
+.good-img:hover > img {
+  transform: scale(1.1);
+}
+.good-type {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  background-color: #76bd42;
+  text-align: center;
+  line-height: 50px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+}
+.good-info {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 60px;
+  padding: 15px;
+  font-size: 17px;
+  color: #000;
+}
+.good-info em {
+  font-style: normal;
+}
+.good-info-price {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 0 15px;
+  font-size: 22px;
+  color: #000;
+  font-weight: 500;
+}
+.good-info-price em {
+  font-size: 17px;
+  font-style: normal;
+}
+.good-add-cart {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: url("../images/btnCartList.png") no-repeat;
+  background-position: 0 0;
+  border: 0;
+  right: 23px;
+  bottom: 32px;
+  cursor: pointer;
+}
+.good-wrap {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.no-mb {
+  margin-bottom: 0;
+}
+/* section 레이아웃 */
+.layout-wrap {
+  position: relative;
+  display: block;
+}
+.layout-left {
+  position: relative;
+  display: block;
+  width: calc(100% - 900px);
+  float: left;
+}
+.layout-right {
+  position: relative;
+  display: block;
+  width: 900px;
+  float: right;
+}
+.good-slide {
+  position: relative;
+  display: block;
+}
+/* 알뜰 상품 */
+.sale {
+  position: relative;
+  display: block;
+  background-color: #edf9f9;
+}
+.sale .slide-control {
+  margin-top: 100px;
 }
