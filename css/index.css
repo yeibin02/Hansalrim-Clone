@@ -921,3 +921,150 @@ body {
 .sale .slide-control {
   margin-top: 100px;
 }
+/* 신상품 */
+.new {
+  position: relative;
+  display: block;
+}
+.new .section-bt {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.new-wrap {
+  position: relative;
+  display: block;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 50px;
+}
+.new-left {
+  position: relative;
+  display: block;
+  width: calc(50% - 8px);
+  float: left;
+}
+.new-img {
+  position: relative;
+  display: block;
+  height: 370px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+.new-title {
+  position: relative;
+  display: block;
+  margin-bottom: 10px;
+  font-size: 25px;
+  font-weight: 700;
+}
+.new-txt {
+  position: relative;
+  display: block;
+  font-size: 17px;
+}
+.new-right {
+  position: relative;
+  display: block;
+  width: calc(50% - 8px);
+  float: right;
+}
+.new-box {
+  position: relative;
+  display: block;
+  width: calc(50% - 8px);
+}
+.new-box-img {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+.new-box-img img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 102%;
+}
+.new-box-title {
+  position: relative;
+  display: block;
+  font-size: 17px;
+  font-weight: 500;
+  /* 말줄임 ...처리 */
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+.new-right .new-box:nth-child(2n + 1) {
+  float: left;
+}
+.new-right .new-box:nth-child(2n) {
+  float: right;
+}
+/* 추천상품 */
+.recommend {
+  position: relative;
+  display: block;
+  background-color: #fff8fa;
+}
+.recommend .section-title-txt {
+  font-size: 17px;
+  border-bottom: 2px solid #76bd42;
+  display: inline-block;
+}
+.blue {
+  color: #76bd42;
+}
+/* 인기물품 */
+.popular {
+  position: relative;
+  display: block;
+}
+.popular-more {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 34px;
+  padding: 0 20px;
+  border: 1px solid #bbb;
+  line-height: 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 13px;
+  background-color: #fff;
+  transition: background-color 0.3s;
+}
+.popular-more:hover{
+  background-color: #f9f9f9;
+}
+.popular-slide {
+  position: relative;
+  display: block;
+  width: calc(100% - 80px - 80px);
+  height: 140px;
+  float: left;
+}
+.popular-slide a {
+  position: relative;
+  display: block;
+  width: 140px;
+  height: 140px;
+}
+.popular-cate-icon {
+  position: relative;
+  display: block;
+  width: 65px;
+  height: 64px;
+  overflow: hidden;
+}
+.popular-cate-name {
+  position: relative;
+  display: block;
+  font-size: 17px;
+  text-align: center;
+  white-space: nowrap;
+}
