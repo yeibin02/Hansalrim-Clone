@@ -248,74 +248,74 @@
   ],
   "recommendgood": [
     {
-      "name": "로메인",
-      "unit": "150g",
-      "price": "2250",
+      "name": "자장소스",
+      "unit": "250g",
+      "price": "2500",
       "tag": "인기",
-      "pic": "../images/good_1.jpg",
+      "pic": "../images/image_1.jpg",
       "id": "1",
       "link": "#"
     },
     {
-      "name": "깻잎",
-      "unit": "30장",
-      "price": "1100",
+      "name": "채소볶음밥",
+      "unit": "300g",
+      "price": "3800",
       "tag": "인기",
-      "pic": "../images/good_2.jpg",
+      "pic": "../images/image_2.jpg",
       "id": "2",
       "link": "#"
     },
     {
-      "name": "엔디브",
-      "unit": "200g",
-      "price": "2500",
+      "name": "초당옥수수피자",
+      "unit": "230g",
+      "price": "9500",
       "tag": "인기",
-      "pic": "../images/good_3.jpg",
+      "pic": "../images/image_3.jpg",
       "id": "3",
       "link": "#"
     },
     {
-      "name": "감자",
-      "unit": "1kg",
-      "price": "3600",
+      "name": "통살생선가스",
+      "unit": "240g",
+      "price": "6200",
       "tag": "인기",
-      "pic": "../images/good_4.jpg",
+      "pic": "../images/image_4.jpg",
       "id": "4",
       "link": "#"
     },
     {
-      "name": "고구마",
-      "unit": "1kg",
+      "name": "우리밀핫도그",
+      "unit": "200g",
       "price": "5000",
       "tag": "인기",
-      "pic": "../images/good_5.jpg",
+      "pic": "../images/image_5.jpg",
       "id": "5",
       "link": "#"
     },
     {
-      "name": "당근",
-      "unit": "500g",
-      "price": "3000",
+      "name": "돼지고기고추장구운주먹밥",
+      "unit": "100g * 4개",
+      "price": "5700",
       "tag": "인기",
-      "pic": "../images/good_6.jpg",
+      "pic": "../images/image_6.jpg",
       "id": "6",
       "link": "#"
     },
     {
-      "name": "연근",
-      "unit": "500g",
-      "price": "3500",
+      "name": "카레닭가슴살주먹밥",
+      "unit": "400g",
+      "price": "6800",
       "tag": "인기",
-      "pic": "../images/good_7.jpg",
+      "pic": "../images/image_7.jpg",
       "id": "7",
       "link": "#"
     },
     {
-      "name": "자연그대로 더마로션",
-      "unit": "200ml",
-      "price": "20300",
+      "name": "꼬마소시지",
+      "unit": "300g",
+      "price": "5000",
       "tag": "인기",
-      "pic": "../images/good_8.jpg",
+      "pic": "../images/image_8.jpg",
       "id": "8",
       "link": "#"
     }
@@ -406,7 +406,626 @@
       "link": "#"
     }
   ],
-  "populargood": [
-    
+  "populargood": {
+    "populargood-1": [
+      {
+        "name": "백미/유",
+        "unit": "4kg",
+        "price": 18800,
+        "tag": "인기",
+        "pic": "popgood_1.jpg",
+        "id": "0",
+        "link": "#"
+      },
+      {
+        "name": "백미/유",
+        "unit": "8kg",
+        "price": 36800,
+        "tag": "인기",
+        "pic": "popgood_3.jpg",
+        "id": "0",
+        "link": "#"
+      },
+      {
+        "name": "현미/유",
+        "unit": "2kg",
+        "price": 9000,
+        "tag": "인기",
+        "pic": "popgood_2.jpg",
+        "id": "0",
+        "link": "#"
+      },
+      {
+        "name": "백미/유",
+        "unit": "2kg",
+        "price": 9500,
+        "tag": "인기",
+        "pic": "popgood_4.jpg",
+        "id": "0",
+        "link": "#"
+      }
+    ],
+    "populargood-2": [
+      {
+        "name": "가지",
+        "unit": "2개",
+        "price": 1800,
+        "tag": "인기",
+        "pic": "popgood_5.jpg",
+        "id": "0",
+        "link": "#"
+      },
+      {
+        "name": "양배추",
+        "unit": "1kg이상",
+        "price": 3350,
+        "tag": "인기",
+        "pic": "popgood_6.jpg",
+        "id": "0",
+        "link": "#"
+      },
+      {
+        "name": "콩나물",
+        "unit": "300g",
+        "price": 1550,
+        "tag": "인기",
+        "pic": "popgood_7.jpg",
+        "id": "0",
+        "link": "#"
+      },
+      {
+        "name": "브로콜리",
+        "unit": "250g",
+        "price": 3700,
+        "tag": "인기",
+        "pic": "popgood_8.jpg",
+        "id": "0",
+        "link": "#"
+      }
+    ],
+    "populargood-3": [
+      {
+        "name": "방울토마토/대추형",
+        "unit": "500g",
+        "price": 3600,
+        "tag": "인기",
+        "pic": "popgood_9.jpg",
+        "id": "0",
+        "link": "#"
+      },
+      {
+        "name": "완숙토마토",
+        "unit": "1kg",
+        "price": 5400,
+        "tag": "인기",
+        "pic": "popgood_10.jpg",
+        "id": "0",
+        "link": "#"
+      },
+      {
+        "name": "복숭아",
+        "unit": "2kg",
+        "price": 15700,
+        "tag": "인기",
+        "pic": "popgood_11.jpg",
+        "id": "0",
+        "link": "#"
+      },
+      {
+        "name": "수박",
+        "unit": "7~8kg",
+        "price": 23500,
+        "tag": "인기",
+        "pic": "popgood_12.jpg",
+        "id": "0",
+        "link": "#"
+      }
+    ],
+    "populargood-4": [
+      {
+        "name": "유정란",
+        "unit": "15알/국내산",
+        "price": 1500,
+        "tag": "인기",
+        "pic": "popgood_13.jpg",
+        "id": "0",
+        "link": "#"
+      },
+      {
+        "name": "유정란",
+        "unit": "안심대안사료/15알",
+        "price": 1500,
+        "tag": "인기",
+        "pic": "popgood_14.jpg",
+        "id": "0",
+        "link": "#"
+      },
+      {
+        "name": "구운유정란",
+        "unit": "6알",
+        "price": 1500,
+        "tag": "인기",
+        "pic": "popgood_15.jpg",
+        "id": "0",
+        "link": "#"
+      },
+      {
+        "name": "삼계닭",
+        "unit": "2마리/국내산",
+        "price": 1500,
+        "tag": "인기",
+        "pic": "popgood_16.jpg",
+        "id": "0",
+        "link": "#"
+      }
+    ],
+    "populargood-5": [
+      {
+        "name": "김자반볶음",
+        "unit": "40g",
+        "price": 2300,
+        "tag": "인기",
+        "pic": "popgood_17.jpg",
+        "id": "0",
+        "link": "#"
+      },
+      {
+        "name": "구운도시락김",
+        "unit": "4g*9봉",
+        "price": 4200,
+        "tag": "인기",
+        "pic": "popgood_18.jpg",
+        "id": "0",
+        "link": "#"
+      },
+      {
+        "name": "구운김밥김",
+        "unit": "1개",
+        "price": 1950,
+        "tag": "인기",
+        "pic": "popgood_19.jpg",
+        "id": "0",
+        "link": "#"
+      },
+      {
+        "name": "미역국수",
+        "unit": "1개",
+        "price": 3000,
+        "tag": "인기",
+        "pic": "popgood_20.jpg",
+        "id": "0",
+        "link": "#"
+      }
+    ],
+    "populargood-6": [
+      {
+        "name": "두부",
+        "unit": "420g",
+        "price": 2250,
+        "tag": "인기",
+        "pic": "popgood_21.jpg",
+        "id": "0",
+        "link": "#"
+      },
+      {
+        "name": "무농약콩으로만든두부",
+        "unit": "300g",
+        "price": 2650,
+        "tag": "인기",
+        "pic": "popgood_22.jpg",
+        "id": "0",
+        "link": "#"
+      },
+      {
+        "name": "무농약콩으로만든콩국물",
+        "unit": "300g",
+        "price": 1600,
+        "tag": "인기",
+        "pic": "popgood_23.jpg",
+        "id": "0",
+        "link": "#"
+      },
+      {
+        "name": "연두부",
+        "unit": "120g",
+        "price": 550,
+        "tag": "인기",
+        "pic": "popgood_24.jpg",
+        "id": "0",
+        "link": "#"
+      }
+    ],
+    "populargood-7": [
+      {
+        "name": "동치미냉면육수",
+        "unit": "330g",
+        "price": 1450,
+        "tag": "인기",
+        "pic": "popgood_25.jpg",
+        "id": "0",
+        "link": "#"
+      },
+      {
+        "name": "순한감자라면",
+        "unit": "110g/1봉",
+        "price": 1650,
+        "tag": "인기",
+        "pic": "popgood_26.jpg",
+        "id": "0",
+        "link": "#"
+      },
+      {
+        "name": "닭개장",
+        "unit": "500g",
+        "price": 8000,
+        "tag": "인기",
+        "pic": "popgood_27.jpg",
+        "id": "0",
+        "link": "#"
+      },
+      {
+        "name": "부대찌개",
+        "unit": "550g",
+        "price": 8500,
+        "tag": "인기",
+        "pic": "popgood_28.jpg",
+        "id": "0",
+        "link": "#"
+      }
+    ],
+    "populargood-8": [
+      {
+        "name": "유기농우유",
+        "unit": "종이팩/900ml",
+        "price": 4600,
+        "tag": "인기",
+        "pic": "popgood_29.jpg",
+        "id": "0",
+        "link": "#"
+      },
+      {
+        "name": "우유꽁꽁",
+        "unit": "120ml",
+        "price": 1300,
+        "tag": "인기",
+        "pic": "popgood_30.jpg",
+        "id": "0",
+        "link": "#"
+      },
+      {
+        "name": "우유",
+        "unit": "범산/200ml",
+        "price": 1100,
+        "tag": "인기",
+        "pic": "popgood_31.jpg",
+        "id": "0",
+        "link": "#"
+      },
+      {
+        "name": "유기농성이시돌목장우유",
+        "unit": "900ml",
+        "price": 4400,
+        "tag": "인기",
+        "pic": "popgood_32.jpg",
+        "id": "0",
+        "link": "#"
+      }
+    ],
+    "populargood-9": [
+      {
+        "name": "유기보리차",
+        "unit": "500g",
+        "price": 4200,
+        "tag": "인기",
+        "pic": "popgood_33.jpg",
+        "id": "0",
+        "link": "#"
+      },
+      {
+        "name": "흑염소진액",
+        "unit": "100ml*30봉",
+        "price": 118800,
+        "tag": "인기",
+        "pic": "popgood_34.jpg",
+        "id": "0",
+        "link": "#"
+      },
+      {
+        "name": "채소액",
+        "unit": "유기/150ml*30봉",
+        "price": 30000,
+        "tag": "인기",
+        "pic": "popgood_35.jpg",
+        "id": "0",
+        "link": "#"
+      },
+      {
+        "name": "꼬마와땅 순한발아보리차",
+        "unit": "10g*18개",
+        "price": 3100,
+        "tag": "인기",
+        "pic": "popgood_36.jpg",
+        "id": "0",
+        "link": "#"
+      }
+    ],
+    "populargood-10": [
+      {
+        "name": "수피아 알로에베라잎즙 수딩젤",
+        "unit": "150ml",
+        "price": 6700,
+        "tag": "인기",
+        "pic": "popgood_37.jpg",
+        "id": "0",
+        "link": "#"
+      },
+      {
+        "name": "미효단 병풀잎 시카패드",
+        "unit": "70장",
+        "price": 16300,
+        "tag": "새물품",
+        "pic": "popgood_38.jpg",
+        "id": "0",
+        "link": "#"
+      },
+      {
+        "name": "수피아 해맑은 클렌징폼",
+        "unit": "120ml",
+        "price": 8900,
+        "tag": "인기",
+        "pic": "popgood_39.jpg",
+        "id": "0",
+        "link": "#"
+      },
+      {
+        "name": "수피아 알로에 마스크팩",
+        "unit": "5장",
+        "price": 5600,
+        "tag": "인기",
+        "pic": "popgood_40.jpg",
+        "id": "0",
+        "link": "#"
+      }
+    ],
+    "populargood-11": [
+      {
+        "name": "물사랑 상쾌한치약",
+        "unit": "130g*2개",
+        "price": 5000,
+        "tag": "인기",
+        "pic": "popgood_41.jpg",
+        "id": "0",
+        "link": "#"
+      },
+      {
+        "name": "액상세제",
+        "unit": "보충용:2.1L",
+        "price": 10600,
+        "tag": "인기",
+        "pic": "popgood_42.jpg",
+        "id": "0",
+        "link": "#"
+      },
+      {
+        "name": "이웃음 칫솔",
+        "unit": "부드러운모/작은헤드",
+        "price": 5900,
+        "tag": "인기",
+        "pic": "popgood_43.jpg",
+        "id": "0",
+        "link": "#"
+      },
+      {
+        "name": "이웃음 칫솔",
+        "unit": "부드러운모/성인용",
+        "price": 5400,
+        "tag": "인기",
+        "pic": "popgood_44.jpg",
+        "id": "0",
+        "link": "#"
+      }
+    ],
+    "populargood-12": [
+      {
+        "name": "생협함께3겹둥근휴지",
+        "unit": "18롤",
+        "price": 15500,
+        "tag": "인기",
+        "pic": "popgood_45.jpg",
+        "id": "0",
+        "link": "#"
+      },
+      {
+        "name": "생협함께 주방휴지",
+        "unit": "6롤",
+        "price": 7300,
+        "tag": "인기",
+        "pic": "popgood_46.jpg",
+        "id": "0",
+        "link": "#"
+      },
+      {
+        "name": "생협함께 미용사각휴지",
+        "unit": "180매/3상자",
+        "price": 5000,
+        "tag": "인기",
+        "pic": "popgood_47.jpg",
+        "id": "0",
+        "link": "#"
+      },
+      {
+        "name": "생협함께 2겹둥근휴지",
+        "unit": "12롤",
+        "price": 7600,
+        "tag": "인기",
+        "pic": "popgood_48.jpg",
+        "id": "0",
+        "link": "#"
+      }
+    ],
+    "populargood-13": [
+      {
+        "name": "반려동물 닭가슴살육포",
+        "unit": "60g",
+        "price": 6000,
+        "tag": "인기",
+        "pic": "popgood_49.jpg",
+        "id": "0",
+        "link": "#"
+      },
+      {
+        "name": "생협함께 반려견 사료",
+        "unit": "전연령용/1.6kg",
+        "price": 1500,
+        "tag": "인기",
+        "pic": "popgood_50.jpg",
+        "id": "0",
+        "link": "#"
+      },
+      {
+        "name": "반려동물 닭가슴살단호박큐브",
+        "unit": "60g",
+        "price": 5000,
+        "tag": "인기",
+        "pic": "popgood_51.jpg",
+        "id": "0",
+        "link": "#"
+      },
+      {
+        "name": "반려묘 짜먹는 치킨",
+        "unit": "70g",
+        "price": 5500,
+        "tag": "인기",
+        "pic": "popgood_52.jpg",
+        "id": "0",
+        "link": "#"
+      }
+    ],
+    "populargood-14": [
+      {
+        "name": "닭다리순살",
+        "unit": "1kg/국내산",
+        "price": 22100,
+        "tag": "인기",
+        "pic": "popgood_53.jpg",
+        "id": "0",
+        "link": "#"
+      },
+      {
+        "name": "튀김옷돈가스",
+        "unit": "1kg",
+        "price": 19900,
+        "tag": "인기",
+        "pic": "popgood_54.jpg",
+        "id": "0",
+        "link": "#"
+      },
+      {
+        "name": "열린오징어",
+        "unit": "1kg/4~5마리",
+        "price": 1500,
+        "tag": "인기",
+        "pic": "popgood_55.jpg",
+        "id": "0",
+        "link": "#"
+      },
+      {
+        "name": "닭가슴살",
+        "unit": "1kg/국내산",
+        "price": 1500,
+        "tag": "인기",
+        "pic": "popgood_56.jpg",
+        "id": "0",
+        "link": "#"
+      }
+    ]
+  },
+  "brandarr": [
+    {
+      "name": "참여인증",
+      "title1": "참여공동체",
+      "value1": "51곳",
+      "title2": "재배면적",
+      "value2": "9,441,668 제곱미터",
+      "pic": "brand_1.png",
+      "id": "브랜드1",
+      "link": "#"
+    },
+    {
+      "name": "병재사용",
+      "title1": "온실가스",
+      "value1": "105.1톤 이하",
+      "title2": "소나무",
+      "value2": "8,866그루 이상",
+      "pic": "brand_2.png",
+      "id": "브랜드2",
+      "link": "#"
+    },
+    {
+      "name": "토박이씨앗살림",
+      "title1": "생산량",
+      "value1": "253.693kg",
+      "title2": "재배면적",
+      "value2": "72만 제곱미터",
+      "pic": "brand_3.png",
+      "id": "브랜드3",
+      "link": "#"
+    },
+    {
+      "name": "우리보리살림",
+      "title1": "사육두수",
+      "value1": "116,000두",
+      "title2": "보리농지면적",
+      "value2": "800,000제곱미터",
+      "pic": "brand_4.png",
+      "id": "브랜드4",
+      "link": "#"
+    },
+    {
+      "name": "가까운 먹을거리",
+      "title1": "온실가스",
+      "value1": "1,640톤 이하",
+      "title2": "소나무",
+      "value2": "248,561그루 이상",
+      "pic": "brand_5.png",
+      "id": "브랜드5",
+      "link": "#"
+    },
+    {
+      "name": "우리밀 살리기",
+      "title1": "공급량",
+      "value1": "1,436,129 kg",
+      "title2": "온실가스",
+      "value2": "5,055톤 이하",
+      "pic": "brand_6.png",
+      "id": "브랜드6",
+      "link": "#"
+    }
+  ],
+  "bannerarr": [
+    {
+      "link": "#",
+      "image": "banner_1.jpg",
+      "id": "banner1",
+      "title": "배너1"
+    },
+    {
+      "link": "#",
+      "image": "banner_2.jpg",
+      "id": "banner2",
+      "title": "배너2"
+    },
+    {
+      "link": "#",
+      "image": "banner_3.jpg",
+      "id": "banner3",
+      "title": "배너3"
+    },
+    {
+      "link": "#",
+      "image": "banner_4.jpg",
+      "id": "banner4",
+      "title": "배너4"
+    }
   ]
 }

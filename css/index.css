@@ -1038,7 +1038,7 @@ body {
   background-color: #fff;
   transition: background-color 0.3s;
 }
-.popular-more:hover{
+.popular-more:hover {
   background-color: #f9f9f9;
 }
 .popular-slide {
@@ -1053,6 +1053,61 @@ body {
   display: block;
   width: 140px;
   height: 140px;
+  background-color: #f9f9f9;
+  overflow: hidden;
+  border: 2px solid rgba(0, 0, 0, 0);
+  /* transition: all 0.2s; */
+}
+.popular-slide a:hover {
+  background-color: #fff;
+  border: 2px solid #76bd42;
+}
+.popular-cate {
+  position: relative;
+  display: block;
+  margin-bottom: 40px;
+}
+.popular-slide-prev,
+.popular-slide-next {
+  position: relative;
+  display: block;
+  width: 80px;
+  height: 140px;
+  background-color: #fff;
+}
+.popular-slide-prev {
+  float: left;
+}
+.popular-slide-prev span {
+  cursor: pointer;
+  position: absolute;
+  background: url("../images/swiperArrP.png") no-repeat;
+  background-position: 0px 0px;
+  width: 26px;
+  height: 20px;
+  font-size: 0;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+.popular-slide-next {
+  float: right;
+}
+.popular-slide-next span {
+  cursor: pointer;
+  position: absolute;
+  background: url("../images/swiperArrN.png") no-repeat;
+  background-position: 0px 0px;
+  width: 26px;
+  height: 20px;
+  font-size: 0;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+.popular-slide-next span:hover,
+.popular-slide-prev span:hover {
+  background-position: 0px -20px;
 }
 .popular-cate-icon {
   position: relative;
@@ -1060,6 +1115,7 @@ body {
   width: 65px;
   height: 64px;
   overflow: hidden;
+  margin: 20px auto;
 }
 .popular-cate-name {
   position: relative;
@@ -1067,4 +1123,69 @@ body {
   font-size: 17px;
   text-align: center;
   white-space: nowrap;
+}
+
+/* 브랜드관 */
+.brand {
+  position: relative;
+  display: block;
+  background-color: #f3f9f0;
+}
+.brand .slide-control {
+  margin-top: 25px;
+}
+.brand-slide {
+  position: relative;
+  display: block;
+}
+.brand-box {
+  position: relative;
+  display: block;
+  width: 285px;
+  height: 285px;
+  background-color: #fff;
+  padding: 35px 30px;
+}
+.brand-box a {
+  position: relative;
+  display: block;
+  text-align: center;
+}
+.brand-box a img {
+  position: relative;
+  display: inline-block;
+}
+.brand-box a p {
+  position: relative;
+  display: block;
+  font-size: 18px;
+  font-weight: 500;
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+.brand-info {
+  position: relative;
+  display: block;
+}
+.brand-info > li {
+  position: relative;
+  display: block;
+  width: 50%;
+  border-right: 1px solid #e3e3e3;
+  float: left;
+}
+.brand-info > li:last-child {
+  border: 0;
+}
+.brand-info-title {
+  text-align: center;
+  font-size: 16px;
+  color: #666;
+  margin: 5px 0;
+}
+.brand-info-value {
+  position: relative;
+  display: block;
+  font-size: 18px;
+  font-weight: 500;
 }
