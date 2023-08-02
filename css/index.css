@@ -1189,3 +1189,45 @@ body {
   font-size: 18px;
   font-weight: 500;
 }
+
+/* 배너 */
+.banner {
+  position: relative;
+  display: block;
+  padding-bottom: 0;
+}
+.banner-slide {
+  position: relative;
+  display: block;
+}
+.banner-slide a {
+  position: relative;
+  display: block;
+}
+.banner-slide-next,
+.banner-slide-prev {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: block;
+  width: 19px;
+  height: 34px;
+  cursor: pointer;
+  border: 0;
+  z-index: 99;
+}
+.banner-slide-prev {
+  background: url("../images/banner_arrow.png") no-repeat;
+  left: 20px;
+}
+.banner-slide-prev:hover {
+  background-position: 0px -34px;
+}
+.banner-slide-next {
+  background: url("../images/banner_arrow.png") no-repeat;
+  right: 20px;
+  transform: translateY(-50%) rotateY(180deg);
+}
+.banner-slide-next:hover {
+  background-position: 0px -34px;
+}
