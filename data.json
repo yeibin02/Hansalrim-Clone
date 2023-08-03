@@ -1027,5 +1027,42 @@
       "id": "banner4",
       "title": "배너4"
     }
+  ],
+  "season": [
+    {
+      "id": "season1",
+      "link": "#",
+      "pic": "cook_1.jpg",
+      "title": "대파(500g)",
+      "price": 2550
+    },
+    {
+      "id": "season2",
+      "link": "#",
+      "pic": "cook_2.jpg",
+      "title": "말린표고버섯(150g)",
+      "price": 11200
+    },
+    {
+      "id": "season3",
+      "link": "#",
+      "pic": "cook_3.jpg",
+      "title": "참기름(300ml)",
+      "price": 39800
+    },
+    {
+      "id": "season4",
+      "link": "#",
+      "pic": "cook_4.jpg",
+      "title": "쌀조청(500g)",
+      "price": 7200
+    },
+    {
+      "id": "season5",
+      "link": "#",
+      "pic": "cook_6.jpg",
+      "title": "자른다시마(100g)",
+      "price": 3300
+    }
   ]
 }

@@ -97,6 +97,13 @@
 
     <!-- swiper -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!-- Smooth Scrollbar -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/8.8.1/smooth-scrollbar.js"
+      integrity="sha512-yn9N2uBs4OocMUaJ9wZK6ELv+qXIULoRa7IvOsGz2wqWQRt8mNqU1L2I9Fau24PPxEKlGxuEDkRKvsanwAWUYw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <!--  -->
     <link rel="stylesheet" href="css/index.css" />
     <script src="js/index.js"></script>
@@ -714,33 +721,74 @@
       <section class="season">
         <div class="container">
           <h2 class="section-title">제철제맛 가득한 <b>제철요리</b></h2>
-        </div>
-        <div class="season-wrap clearfix">
-          <div class="season-left">
-            <a href="#">
-              <img src="images/cook_main.jpg" alt="cook" />
-              <div class="season-info">
-                <h3>요리방법</h3>
-                <p>
-                  <span>바삭하고 고소한 건강 주전부리</span>
-                  <b>달지않은곡물플레이크바</b>
-                </p>
-              </div>
-            </a>
-          </div>
-          <div class="season-right">
-            <div class="season-list">
-              <ul class="season-good-list">
-                <!-- 데이터 출력 js -->
-              </ul>
+
+          <div class="season-wrap clearfix">
+            <div class="season-left">
+              <a href="#">
+                <img src="images/cook_main.jpg" alt="요리" />
+                <div class="season-info">
+                  <h3>요리방법</h3>
+                  <p>
+                    <span>바삭하고 고소한 건강 주전부리</span>
+                    <b>달지않은곡물플레이크바</b>
+                  </p>
+                </div>
+              </a>
             </div>
-            <div class="season-total">
-              
+            <div class="season-right">
+              <div class="season-list">
+                <ul class="season-good-list" id="data-season" data-scrollbar>
+                  <!-- 데이터출력 js -->
+                </ul>
+              </div>
+              <div class="season-total">
+                <div class="season-good-total">
+                  <input
+                    type="checkbox"
+                    id="chall"
+                    class="season-good-check"
+                    checked
+                  />
+                  <label for="chall" class="season-label">라벨</label>
+                  전체 선택 <em id="buy-total">3</em>개
+                </div>
+                <a href="#" class="buy-good">
+                  총 <em id="buy-total-money"> 50,000</em>원 바구니 담기
+                </a>
+              </div>
             </div>
           </div>
         </div>
       </section>
       <!-- 이용후기 -->
+      <section class="review">
+        <div class="container">
+          <div class="layout-wrap clearfix">
+            <div class="layout-left">
+              <h2 class="section-title section-bar">
+                조합원의 생생한<br />
+                <b>이용후기</b>
+              </h2>
+              <p class="section-title-txt">
+                이웃 조합원은 <br />
+                어떤 물품을 구매했을까요?
+              </p>
+
+              <div class="slide-control">
+                <div class="slide-pg">1/4</div>
+                <button class="slide-prev">이전</button>
+                <button class="slide-next">다음</button>
+              </div>
+            </div>
+            <div class="layout-right">
+              <!-- 이용후기 슬라이드 -->
+              <div class="review-slide" id="data-review">
+                <!-- 데이터 출력 js -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <!-- 커뮤니티 -->
       <!-- 하단 -->
     </div>

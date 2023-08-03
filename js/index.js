@@ -36,6 +36,7 @@ window.onload = function () {
       POPULAR_GOOD = obj.populargood;
       BRAND_ARR = obj.brandarr;
       BANNER_ARR = obj.bannerarr;
+      SEASON_ARR = obj.season;
 
       // 비주얼 화면에 배치
       showVisual();
@@ -55,10 +56,12 @@ window.onload = function () {
       showBrandArr();
       //배너 화면에 배치
       showBannerArr();
+      //시즌 목록을 화면에 배치
+      showSeasonArr();
     }
   };
   // 자료를 호출
-  console.log("자료를 가져온다. XMLHT.....");
+  // console.log("자료를 가져온다. XMLHT.....");
   xhttp.open("GET", "data.json");
   // 웹 브라우저 기능을 실행할 수 있도록 요청
   xhttp.send();
@@ -93,6 +96,9 @@ window.onload = function () {
   // 배너 화면 출력
   let BANNER_ARR;
   let bannerTag = document.getElementById("data-banner");
+  //시즌 목록 화면출력
+  let SEASON_ARR;
+  let seasonTag = document.getElementById("data-season");
   // ================================================
   // 비주얼 화면 출력 기능
   function showVisual() {
@@ -411,7 +417,7 @@ window.onload = function () {
   function showPopularGood() {
     let html = "";
     let popCate = "populargood-" + (popularShow + 1);
-    console.log(POPULAR_GOOD[popCate]);
+    // console.log(POPULAR_GOOD[popCate]);
     POPULAR_GOOD[popCate].forEach(function (item) {
       let tag = `
       <div class="good-box">
@@ -520,6 +526,103 @@ window.onload = function () {
       },
     });
   }
+
+  //시즌 목록 화면 출력 기능
+  const buyTotal = document.getElementById("buy-total");
+  const buyTotalMoney = document.getElementById("buy-total-money");
+  let buyTotalCount = 0;
+  let buyTotalMoneyPrice = 0;
+  function showSeasonArr() {
+    let html = "";
+    SEASON_ARR.forEach(function (item, index) {
+      const tag = `
+      <li>
+        <div class = "season-good clearfix">
+          <input
+            type = "checkbox"
+            id = "ch${index}"
+            class = "season-good-check season-item"
+            checked
+            value = ${item.price}/>
+            <label for = "ch${index}" class= "season-label">${
+        item.title
+      }</label>
+            <a href = "${item.link}" class = "season-good-img">
+              <img src = "../images/${item.pic}" alt = "${item.title}"/>
+            </a>
+            <p class = "season-good-info">
+            <a href="${item.link}" class="season-good-title">${item.title}</a>
+            <a href="${
+              item.link
+            }" class="season-good-price"><em>${priceToString(
+        item.price
+      )}</em>원</a>
+            </p>
+        </div>
+      </li>
+      `;
+      html += tag;
+    });
+    seasonTag.innerHTML = html;
+    //scrollbar
+    Scrollbar.initAll();
+    //체크박스 각각의 기능
+    checkBoxFn();
+    //계산 출력
+    showBuyGood();
+  }
+  //전체 체크박스
+  const chkAll = document.getElementById("chall");
+  chkAll.addEventListener("change", function () {
+    const chkArr = document.querySelectorAll(".season-item");
+    if (chkAll.checked) {
+      chkArr.forEach(function (item) {
+        item.checked = true;
+      });
+    } else {
+      //전체 체크를 해제 해야 하는 경우
+      chkArr.forEach(function (item) {
+        item.checked = false;
+      });
+    }
+    showBuyGood();
+  });
+  //체크박스 각각의 기능
+  function checkBoxFn() {
+    const chkArr = document.querySelectorAll(".season-item");
+    chkArr.forEach(function (item) {
+      item.addEventListener("change", function () {
+        //가격을 다시 계산함
+        showBuyGood();
+      });
+    });
+  }
+  //계산 출력 기능
+  function showBuyGood() {
+    //체크가 된 카운팅을 함. 그리고 더함.
+    let count = 0;
+    let priceTotal = 0;
+    const chkArr = document.querySelectorAll(".season-item");
+    chkArr.forEach(function (item) {
+      const state = item.checked;
+      if (state) {
+        count += 1;
+        //글자를 정수 숫자를 변경
+        const price = parseInt(item.value);
+        priceTotal += price;
+      }
+    });
+    buyTotalCount = count;
+    buyTotalMoneyPrice = priceTotal;
+    buyTotal.innerHTML = buyTotalCount;
+    buyTotalMoney.innerHTML = priceToString(buyTotalMoneyPrice);
+    //전체 선택 버튼 해제
+    if (buyTotalCount === chkArr.length) {
+      chkAll.checked = true;
+    } else {
+      chkAll.checked = false;
+    }
+  }
   // ================================================
   //펼침 목록 보기 기능
   //더보기 목록 기능
@@ -567,18 +670,18 @@ window.onload = function () {
       toggleBtArr.forEach(function (item) {
         item.classList.remove("active");
       });
-      console.log(목록);
+      // console.log(목록);
       const nowListId = 목록.getAttribute("id");
       const hideArr = toggleListArr.filter(function (item) {
         let id = item.getAttribute("id");
-        console.log(id);
+        // console.log(id);
         if (id !== nowListId) {
           return this;
         }
       });
 
       // 그리고 새로 저장된 배열의 목록들은
-      console.log(hideArr);
+      // console.log(hideArr);
       hideArr.forEach(function (item) {
         item.style.display = "none";
       });
