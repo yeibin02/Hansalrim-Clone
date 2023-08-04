@@ -37,6 +37,9 @@ window.onload = function () {
       BRAND_ARR = obj.brandarr;
       BANNER_ARR = obj.bannerarr;
       SEASON_ARR = obj.season;
+      REVIEW_ARR = obj.review;
+      NOTICE_ARR = obj.notice;
+      GOODNEWS_ARR = obj.goodnews;
 
       // 비주얼 화면에 배치
       showVisual();
@@ -58,6 +61,12 @@ window.onload = function () {
       showBannerArr();
       //시즌 목록을 화면에 배치
       showSeasonArr();
+      //리뷰 목록을 화면에 배치
+      showReviewArr();
+      //공지사항 화면에 배치
+      showNoticeArr();
+      //물품소식 화면에 배치
+      showGoodNewsArr();
     }
   };
   // 자료를 호출
@@ -96,9 +105,18 @@ window.onload = function () {
   // 배너 화면 출력
   let BANNER_ARR;
   let bannerTag = document.getElementById("data-banner");
-  //시즌 목록 화면출력
+  //시즌 목록 화면 출력
   let SEASON_ARR;
   let seasonTag = document.getElementById("data-season");
+  //리뷰 화면 출력
+  let REVIEW_ARR;
+  let reviewTag = document.getElementById("data-review");
+  //공지 화면 출력
+  let NOTICE_ARR;
+  let noticeTag = document.getElementById("data-notice");
+  //공지 화면 출력
+  let GOODNEWS_ARR;
+  let goodnewsTag = document.getElementById("data-goodnews");
   // ================================================
   // 비주얼 화면 출력 기능
   function showVisual() {
@@ -622,6 +640,123 @@ window.onload = function () {
     } else {
       chkAll.checked = false;
     }
+  }
+
+  //리뷰 목록 화면 출력 기능
+  function showReviewArr() {
+    let html = `
+    <div class="swiper sw-review">
+    <div class="swiper-wrapper">
+    `;
+    //데이터 처리
+    REVIEW_ARR.forEach(function (item) {
+      const tag = `
+      <div class="swiper-slide">
+      <div class="review-box">
+        <a href="${item.link}">
+          <div class= "review-box-desc">
+            <span class= " review-box-title">
+            ${item.title}
+            </span>
+            <span class="review-box-star"> ${item.star} </span>
+            <span class="review-box-img">
+            <img src="../images/${item.pic}" alt="${item.title}" />
+            </span>
+          </div>
+            <p class="review-box-txt">
+              ${item.txt}
+            </p>
+          <span class="review-box-user"> ${item.user}${item.shop} </span>
+        </a>
+      </div>
+      </div>
+      `;
+      html += tag;
+    });
+    html += `
+    </div>
+    </div>
+    `;
+    reviewTag.innerHTML = html;
+    const swReview = new Swiper(".sw-review", {
+      slidesPerView: 3,
+      spaceBetween: 16,
+      slidesPerGroup: 3,
+      navigation: {
+        prevEl: ".review .slide-prev",
+        nextEl: ".review .slide-next",
+      },
+      pagination: {
+        el: ".review .slide-pg",
+        type: "fraction",
+      },
+    });
+  }
+
+  //공지사항 화면 출력 기능
+  function showNoticeArr() {
+    let html = "";
+    //데이터 갱신
+    NOTICE_ARR.forEach(function (item) {
+      const tag = `
+      <li>
+        <a href = "${item.link}">
+          <span>
+          ${item.title}
+          </span><em>${item.date}</em>
+        </a>
+      </li>
+      `;
+      html += tag;
+    });
+    noticeTag.innerHTML = html;
+  }
+
+  //물품소식 화면 출력 기능
+  function showGoodNewsArr() {
+    let html = "";
+    //데이터 갱신
+    GOODNEWS_ARR.forEach(function (item) {
+      const tag = `
+      <li>
+        <a href = "${item.link}">
+          <span>
+          ${item.title}
+          </span><em>${item.date}</em>
+        </a>
+      </li>
+      `;
+      html += tag;
+    });
+    goodnewsTag.innerHTML = html;
+  }
+
+  //커뮤니티 탭 메뉴
+  //탭 버튼
+  const tabBtArr = document.querySelectorAll(".community-btn");
+  //탭 내용
+  const tabConArr = document.querySelectorAll(".community-notice dd");
+  //탭 포커스
+  let tabFocusIndex = 0;
+  //탭 버튼 클릭 처리
+  tabBtArr.forEach(function (item, index) {
+    item.addEventListener("click", function () {
+      tabFocusIndex = index;
+      tabFocusFn();
+    });
+  });
+  function tabFocusFn() {
+    // 포커스 css를 적용 및 제거
+    tabBtArr.forEach(function (item) {
+      item.classList.remove("community-btn-active");
+    });
+    //인덱스에 해당되는 것만 적용
+    tabBtArr[tabFocusIndex].classList.add("community-btn-active");
+    //내용에서 일단 모두 제거
+    tabConArr.forEach(function (item) {
+      item.classList.remove("community-visible-active");
+    });
+    tabConArr[tabFocusIndex].classList.add("community-visible-active");
   }
   // ================================================
   //펼침 목록 보기 기능
