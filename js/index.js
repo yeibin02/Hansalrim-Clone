@@ -16,6 +16,31 @@ window.onload = function () {
   function priceToString(price) {
     return price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
   }
+  //하단 패밀리 펼침 기능
+  //목록 열기 버튼
+  const openBt = document.querySelector(".footer-link");
+  //목록 닫기 버튼
+  const closeBt = document.querySelector(".family-close");
+  //보여질 패밀리 목록
+  const family = document.querySelector(".family");
+  //기능처리
+  openBt.addEventListener("click", function () {
+    family.classList.add("active");
+    this.classList.add("active");
+  });
+  closeBt.addEventListener("click", function () {
+    family.classList.remove("active");
+    openBt.classList.remove("active");
+  });
+
+  //top scroll
+  const fixTop = document.querySelector(".fix-top");
+  fixTop.addEventListener("click", function () {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  });
   // data.json을 로딩
   const xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function (event) {
