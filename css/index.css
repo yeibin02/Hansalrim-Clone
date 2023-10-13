@@ -851,7 +851,7 @@ body {
   position: absolute;
   display: block;
   bottom: 43px;
-  z-index: 9999;
+  z-index: 999;
   left: calc(50% - 600px + 80px);
 }
 .visual-play {
